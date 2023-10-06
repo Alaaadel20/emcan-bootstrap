@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Zaheen</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <!-- ------------------------------------------------------------------------------------------------- -->
+  <body>
+    <main>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        style="background: #fff !important"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" alt="Zaheen logo" src="imgs/png-logo 1.png"
+          /></a>
+          <div class="search-container">
+            <label>Subjects</label>
+            <div class="search-bar">
+              <input type="text" placeholder="search" class="search-input" />
+              <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler shadow-none border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="search-container search-container-mobile">
+            <label>Subjects</label>
+            <div class="search-bar">
+              <input type="text" placeholder="search" class="search-input" />
+              <ion-icon name="search-outline" class="search-icon"></ion-icon>
+            </div>
+          </div>
+          <div
+            class="sidebar offcanvas offcanvas-start bb"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"></li>
+                <li class="nav-item list">
+                  <span
+                    ><ion-icon name="book-outline" class="nav-icon"></ion-icon
+                  ></span>
+                  <a class="nav-link main-nav-link" aria-current="page" href="#"
+                    >Teach on Zaheen</a
+                  >
+                </li>
+                <li class="nav-item list">
+                  <span
+                    ><ion-icon name="mail-outline" class="nav-icon"></ion-icon
+                  ></span>
+                  <a class="nav-link main-nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <span
+                    ><ion-icon
+                      name="cart-outline"
+                      class="nav-icon"
+                    ></ion-icon></span
+                  ><a class="nav-link nav-cart-text" href="#">Cart</a>
+                </li>
+                <li class="nav-item">
+                  <span
+                    ><ion-icon name="log-in-outline" class="nav-icon"></ion-icon
+                  ></span>
+                  <a class="nav-link nav-sign-text" href="#">Sign In</a>
+                </li>
+                <li class="nav-item cart-sign-globe">
+                  <a class="cart"
+                    ><ion-icon name="cart-outline" class="cart-icon"></ion-icon
+                  ></a>
+                  <button class="sign-in-btn">Sign In</button>
+                  <button class="globe-btn">
+                    <ion-icon
+                      name="globe-outline"
+                      class="globe-icon"
+                    ></ion-icon>
+                  </button>
+                </li>
+              </ul>
+              <a href="#"
+                ><img
+                  class="logo-nav"
+                  alt="Zaheen logo"
+                  src="imgs/png-logo 1.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- --------------------------------------------------------------------------------------------- -->
+      <section class="hero-1">
+        <div id="carouselExampleCaptions" class="carousel slide hero-slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="content">
+            <h1 class="hero-heading">Start your learning journey with us</h1>
+            <p class="hero-text">Grab The Chances & Invest in your future</p>
+            <button class="hero-btn">Get Started</button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active item-slide"
+              style="
+                background-image: linear-gradient(
+                    rgba(34, 34, 34, 0.65),
+                    rgba(34, 34, 34, 0.65)
+                  ),
+                  url('https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n');
+                background-size: cover !important;
+                background-attachment: fixed;
+                background-position: center;
+                width: 100%;
+                height: 95vh;
+              "
+            ></div>
+            <div
+              class="carousel-item item-slide"
+              style="
+                background-image: linear-gradient(
+                    rgba(34, 34, 34, 0.65),
+                    rgba(34, 34, 34, 0.65)
+                  ),
+                  url('https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n');
+                background-size: cover !important;
+                background-attachment: fixed;
+                background-position: center;
+                width: 100%;
+                height: 95vh;
+              "
+            ></div>
+            <div
+              class="carousel-item item-slide"
+              style="
+                background-image: linear-gradient(
+                    rgba(34, 34, 34, 0.65),
+                    rgba(34, 34, 34, 0.65)
+                  ),
+                  url('https://blog.erasmusgeneration.org/sites/default/files/styles/eg_highlighted_image/public/media/2021-11/annie-spratt-qckxruozjrg-unsplash.jpg.webp?itok=JhcWKi2n');
+                background-size: cover !important;
+                background-attachment: fixed;
+                background-position: center;
+                width: 100%;
+                height: 95vh;
+              "
+            ></div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------------------------- -->
+      <section class="section-subjects">
+        <h2 class="subject-heading">Top Subjects</h2>
+        <div
+          class="album py-5 bg-body-tertiary"
+          style="background: #fff !important"
+        >
+          <div class="container">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-5">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div class="img-box-subjects">
+                    <img src="./imgs//Development1.png" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button type="button" class="btn btn-sm btn-subjects">
+                        Mathematics
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div class="img-box-subjects">
+                    <img src="./imgs//Development4.png" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button type="button" class="btn btn-sm btn-subjects">
+                        Science
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div class="img-box-subjects">
+                    <img src="./imgs//Development2.png" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button type="button" class="btn btn-sm btn-subjects">
+                        Music
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col offset-md-2">
+                <div class="card shadow-sm">
+                  <div class="img-box-subjects">
+                    <img src="./imgs//Development3.png" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button type="button" class="btn btn-sm btn-subjects">
+                        Social studies
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <div class="img-box-subjects">
+                    <img src="./imgs//Development5.png" alt="" />
+                  </div>
+                  <div class="card-body">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <button type="button" class="btn btn-sm btn-subjects">
+                        Humanities & Arts
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------------------------- -->
+      <section class="section-courses">
+        <h2 class="courses-heading">Find Your perfect course</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active courses-item">
+              <div class="courses-row-container">
+                <div class="my-card">
+                  <div class="img-box">
+                    <img src="./imgs//Image.jpg" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card2">
+                  <div class="img-box">
+                    <img src="./imgs/Image.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card3">
+                  <div class="img-box">
+                    <img src="./imgs/1.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn btn3">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card4">
+                  <div class="img-box">
+                    <img src="./imgs//Image2.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="courses-row-container">
+                <div class="my-card">
+                  <div class="img-box">
+                    <img src="./imgs//Image.jpg" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card2">
+                  <div class="img-box">
+                    <img src="./imgs/Image.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card3">
+                  <div class="img-box">
+                    <img src="./imgs/1.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn btn3">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card4">
+                  <div class="img-box">
+                    <img src="./imgs//Image2.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="courses-row-container">
+                <div class="my-card">
+                  <div class="img-box">
+                    <img src="./imgs//Image.jpg" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card2">
+                  <div class="img-box">
+                    <img src="./imgs/Image.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card3">
+                  <div class="img-box">
+                    <img src="./imgs/1.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn btn3">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+                <div class="my-card card4">
+                  <div class="img-box">
+                    <img src="./imgs//Image2.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev slider-icon"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------------------------- -->
+      <section class="section-instructors" style="position: relative">
+        <div class="instruct-text">
+          <h3>Instructors who have achieved the career you want.</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="swiper-container content1" id="slider2">
+          <div class="swiper-wrapper wrapper1">
+            <div class="swiper-slide instructor-card">
+              <div class="instruct-details">
+                <div class="desc">
+                  <p class="instruct-name">Leslie Dell</p>
+                  <p class="instruct-title">Developer and Lead Instructor</p>
+                </div>
+                <img src="./imgs//Ellipse 10.png" alt="instructor image" />
+              </div>
+              <p class="paragraph">
+                I'm Angela, I'm a developer with a passion for teaching. I'm the
+                lead instructor at the London App Brewery, London's leading
+                Programming Bootcamp. I've helped hundreds of thousands of
+                students learn to code and change their lives by becoming a
+                developer. I've been invited by companies such as Twitter,
+                Facebook and Google to teach their employees.
+              </p>
+              <p class="paragraph">
+                My first foray into programming was when I was just 12 years
+                old, wanting to build my own Space Invader game. Since then,
+                I've made hundred of websites, apps and games. But most
+                importantly, I realised that my greatest passion is teaching.
+              </p>
+              <p class="paragraph">
+                I spend most of my time researching how to make learning to code
+                fun and make hard concepts easy to understand. I apply
+                everything I discover into my bootcamp courses. In my courses,
+                you'll find lots of geeky humour but also lots of explanations
+                and animations to make sure everything is easy to understand.
+              </p>
+            </div>
+            <div class="swiper-slide instructor-card instruct-card2">
+              <div class="instruct-details">
+                <div class="desc">
+                  <p class="instruct-name">Eid wily</p>
+                  <p class="instruct-title">Developer and Lead Instructor</p>
+                </div>
+                <img src="./imgs//Ellipse 11.png" alt="instructor image" />
+              </div>
+              <p class="paragraph">
+                I'm Angela, I'm a developer with a passion for teaching. I'm the
+                lead instructor at the London App Brewery, London's leading
+                Programming Bootcamp. I've helped hundreds of thousands of
+                students learn to code and change their lives by becoming a
+                developer. I've been invited by companies such as Twitter,
+                Facebook and Google to teach their employees.
+              </p>
+              <p class="paragraph">
+                My first foray into programming was when I was just 12 years
+                old, wanting to build my own Space Invader game. Since then,
+                I've made hundred of websites, apps and games. But most
+                importantly, I realised that my greatest passion is teaching.
+              </p>
+              <p class="paragraph">
+                I spend most of my time researching how to make learning to code
+                fun and make hard concepts easy to understand. I apply
+                everything I discover into my bootcamp courses. In my courses,
+                you'll find lots of geeky humour but also lots of explanations
+                and animations to make sure everything is easy to understand.
+              </p>
+            </div>
+            <div class="swiper-slide instructor-card">
+              <div class="instruct-details">
+                <div class="desc">
+                  <p class="instruct-name">Leslie Dell</p>
+                  <p class="instruct-title">Developer and Lead Instructor</p>
+                </div>
+                <img src="./imgs//Ellipse 10.png" alt="instructor image" />
+              </div>
+              <p class="paragraph">
+                I'm Angela, I'm a developer with a passion for teaching. I'm the
+                lead instructor at the London App Brewery, London's leading
+                Programming Bootcamp. I've helped hundreds of thousands of
+                students learn to code and change their lives by becoming a
+                developer. I've been invited by companies such as Twitter,
+                Facebook and Google to teach their employees.
+              </p>
+              <p class="paragraph">
+                My first foray into programming was when I was just 12 years
+                old, wanting to build my own Space Invader game. Since then,
+                I've made hundred of websites, apps and games. But most
+                importantly, I realised that my greatest passion is teaching.
+              </p>
+              <p class="paragraph">
+                I spend most of my time researching how to make learning to code
+                fun and make hard concepts easy to understand. I apply
+                everything I discover into my bootcamp courses. In my courses,
+                you'll find lots of geeky humour but also lots of explanations
+                and animations to make sure everything is easy to understand.
+              </p>
+            </div>
+            <div class="swiper-slide instructor-card instruct-card2">
+              <div class="instruct-details">
+                <div class="desc">
+                  <p class="instruct-name">Eid wily</p>
+                  <p class="instruct-title">Developer and Lead Instructor</p>
+                </div>
+                <img src="./imgs//Ellipse 11.png" alt="instructor image" />
+              </div>
+              <p class="paragraph">
+                I'm Angela, I'm a developer with a passion for teaching. I'm the
+                lead instructor at the London App Brewery, London's leading
+                Programming Bootcamp. I've helped hundreds of thousands of
+                students learn to code and change their lives by becoming a
+                developer. I've been invited by companies such as Twitter,
+                Facebook and Google to teach their employees.
+              </p>
+              <p class="paragraph">
+                My first foray into programming was when I was just 12 years
+                old, wanting to build my own Space Invader game. Since then,
+                I've made hundred of websites, apps and games. But most
+                importantly, I realised that my greatest passion is teaching.
+              </p>
+              <p class="paragraph">
+                I spend most of my time researching how to make learning to code
+                fun and make hard concepts easy to understand. I apply
+                everything I discover into my bootcamp courses. In my courses,
+                you'll find lots of geeky humour but also lots of explanations
+                and animations to make sure everything is easy to understand.
+              </p>
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-2"></div>
+          <!-- Add Navigation Arrows -->
+          <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------------------------- -->
+      <section class="section-instructor">
+        <div class="row align-items-md-stretch">
+          <div class="col-md-6">
+            <div class="h-100 text-bg-dark rounded-3 img-box-instructor">
+              <img src="./imgs/Group .png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="h-100 p-5 bg-body-tertiary border rounded-3 text-box-instructor"
+            >
+              <h2>Become an instructor</h2>
+              <p>
+                Instructors from around the world teach millions of students on
+                Udemy.We provide the tools and skills to teach what you love
+              </p>
+              <p>Become an instructor and change lives including your own.</p>
+              <button class="btn btn-instructor" type="button">
+                Get started
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <section class="testimonials">
+      <div
+        class="album py-5 bg-body-tertiary"
+        style="background: #fff !important"
+      >
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+            <div class="col offset-2">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="testimonial-box box1">
+                <div class="img">M</div>
+                <div class="testimonial">
+                  <h4 class="name">Muhammad R.</h4>
+                  <div class="review">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                    <span>3 weeks ago</span>
+                  </div>
+
+                  <p>
+                    For peaople of all ages who want to learn how to creat iOS
+                    applications,iOS & Swift-The Complete iOS App Development
+                    Bootcamp is a through and well
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <section class="section-testimonials-slider">
+      <div id="slider4" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slider4"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider4"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider4"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="testimonial-box box1">
+              <div class="img">M</div>
+              <div class="testimonial">
+                <h4 class="name">Muhammad R.</h4>
+                <div class="review">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span>3 weeks ago</span>
+                </div>
+
+                <p>
+                  For peaople of all ages who want to learn how to creat iOS
+                  applications,iOS & Swift-The Complete iOS App Development
+                  Bootcamp is a through and well
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-box box1">
+              <div class="img">M</div>
+              <div class="testimonial">
+                <h4 class="name">Muhammad R.</h4>
+                <div class="review">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span>3 weeks ago</span>
+                </div>
+
+                <p>
+                  For peaople of all ages who want to learn how to creat iOS
+                  applications,iOS & Swift-The Complete iOS App Development
+                  Bootcamp is a through and well
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-box box1">
+              <div class="img">M</div>
+              <div class="testimonial">
+                <h4 class="name">Muhammad R.</h4>
+                <div class="review">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span>3 weeks ago</span>
+                </div>
+
+                <p>
+                  For peaople of all ages who want to learn how to creat iOS
+                  applications,iOS & Swift-The Complete iOS App Development
+                  Bootcamp is a through and well
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-box box1">
+              <div class="img">M</div>
+              <div class="testimonial">
+                <h4 class="name">Muhammad R.</h4>
+                <div class="review">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span>3 weeks ago</span>
+                </div>
+
+                <p>
+                  For peaople of all ages who want to learn how to creat iOS
+                  applications,iOS & Swift-The Complete iOS App Development
+                  Bootcamp is a through and well
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="testimonial-box box1">
+              <div class="img">M</div>
+              <div class="testimonial">
+                <h4 class="name">Muhammad R.</h4>
+                <div class="review">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half-outline"></ion-icon>
+                  <span>3 weeks ago</span>
+                </div>
+
+                <p>
+                  For peaople of all ages who want to learn how to creat iOS
+                  applications,iOS & Swift-The Complete iOS App Development
+                  Bootcamp is a through and well
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider4"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider4"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img
+            class="mb-2 footer-logo"
+            src="./imgs/png-logo 1.png"
+            alt=""
+            width="24"
+            height="19"
+          />
+          <p class="d-block mb-3 text-body-light">
+            Our website to fulfill customer demand by making them satisfied with
+            growing their Knowledge.
+          </p>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#">Home</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#">Categories</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Support</h5>
+          <ul class="list-unstyled text-small">
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#">FAQs</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#">Blog</a>
+            </li>
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#"
+                >Privacy policy</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#"
+                >Technical Support</a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="link-light text-decoration-none" href="#"
+                >Tearms & Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Follow us</h5>
+          <div class="social-media">
+            <a href="#" class="social">
+              <ion-icon name="logo-instagram"></ion-icon
+            ></a>
+            <a href="#" class="social"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+            <a href="#" class="social"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="#" class="social">
+              <ion-icon name="logo-youtube"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+      <button class="lang">
+        <ion-icon name="globe" class="lang-icon"></ion-icon>English
+      </button>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Your custom script for Swiper initialization -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var mySwiper = new Swiper(".swiper-container", {
+          // Optional Swiper parameters:
+          slidesPerView: 2,
+          spaceBetween: 30,
+          // Additional parameters...
+          // navigation: {
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // },
+          pagination: {
+            el: ".swiper-pagination-2",
+            clickable: true,
+          },
+        });
+      });
+    </script>
+  </body>
+  <!-- ------------------------------------------------------------------------------------------------- -->
+</html>
