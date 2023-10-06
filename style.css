@@ -414,6 +414,7 @@ footer ul li a {
   align-items: center;
   justify-content: center;
   gap: 20px;
+  width: 50%;
 }
 .hero-1mobile {
   display: none;
@@ -424,7 +425,6 @@ footer ul li a {
 }
 .search-bar {
   position: relative;
-  width: 40vw;
 }
 .search-icon {
   position: absolute;
@@ -435,7 +435,7 @@ footer ul li a {
 }
 .search-input {
   height: 36px;
-  width: 80%;
+  width: 100%;
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px 30px;
@@ -524,14 +524,6 @@ footer ul li a {
   display: flex !important;
   align-items: center;
 }
-.search-container-mobile {
-  display: none;
-}
-@media only screen and (max-width: 1300px) {
-  .search-bar {
-    width: 35vw;
-  }
-}
 @media only screen and (max-width: 990px) {
   .logo-nav {
     display: block;
@@ -548,23 +540,22 @@ footer ul li a {
   .cart-sign-globe {
     display: none !important;
   }
-  .search-container {
-    display: none;
-  }
   .hero-1mobile {
     display: flex;
     align-items: center;
     justify-content: start;
     margin-bottom: 5px;
   }
-  .search-container-mobile {
-    display: flex;
-
-    margin-bottom: 5px;
-  }
-  .search-container-mobile input {
-  }
   .heromobile label {
     margin-left: 20px;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .logo-burger-container {
+    width: 100%;
+  }
+  .search-container {
+    width: 100%;
   }
 }
