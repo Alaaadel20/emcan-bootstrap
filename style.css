@@ -446,6 +446,11 @@ footer ul li a {
 .search-input:focus {
   outline: none;
 }
+.list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .list a {
   text-decoration: none;
   color: #000 !important;
@@ -526,9 +531,15 @@ footer ul li a {
 }
 @media only screen and (max-width: 990px) {
   .logo-nav {
+    margin-top: 180px;
+
+    background: red;
+
+    height: 200px;
     display: block;
   }
   .nav-icon {
+    color: #00878f;
     display: block;
   }
   .nav-cart-text {
