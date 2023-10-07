@@ -17,6 +17,7 @@ section {
   margin-right: 10px;
 }
 .sidebar {
+  width: 300px !important;
   z-index: 999999 !important;
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
@@ -80,6 +81,9 @@ section {
 }
 
 .btn-subjects {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -101,6 +105,9 @@ section {
 }
 /* //////////////////////////////////////////////////////////////////////////////////////// */
 /* courses section */
+.courses-mobile {
+  display: none;
+}
 .section-courses {
   background: #191b1d;
   padding-top: 30px;
@@ -129,9 +136,10 @@ section {
 .my-card {
   background: #fff;
   height: 400px !important;
-  min-width: 278px;
+  width: calc(100 / 4);
   border-bottom-left-radius: 30px;
   position: relative;
+  margin: 1;
 }
 
 .card2 {
@@ -172,7 +180,7 @@ section {
   background: #fff;
   display: inline-block;
   margin: 0 auto;
-  width: 245px;
+  width: 80%;
   height: 40px;
   color: #00878f;
   border: solid 2px #00878f;
@@ -327,7 +335,7 @@ section {
   display: flex;
   gap: 30px;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-  min-width: 400px;
+
   padding: 30px;
 }
 .name {
@@ -357,7 +365,11 @@ section {
   font-size: 18px;
   width: 350px;
 }
+.section-testimonials-slider {
+  display: none;
+}
 /* //////////////////////////////////////////////////////////////////////////////////////// */
+
 .footer-logo {
   height: 100px;
   width: 135px;
@@ -529,11 +541,42 @@ footer ul li a {
   display: flex !important;
   align-items: center;
 }
+.offcanvas-header-1 {
+  display: none;
+}
+@media only screen and (max-width: 1200px) {
+  .subject-heading {
+    font-size: 36px;
+  }
+  .btn-subjects {
+    font-size: 18px !important;
+  }
+  .section-instructors {
+    display: flex;
+    flex-direction: column;
+  }
+  .instruct-text {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 80px;
+    border-radius: none;
+    padding: 25px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .testimonials {
+    display: none;
+  }
+  .section-testimonials-slider {
+    display: block;
+  }
+}
 @media only screen and (max-width: 990px) {
+  .offcanvas-header-1 {
+    display: flex !important;
+    justify-content: end !important;
+  }
   .logo-nav {
-    margin-top: 180px;
-
-    background: red;
+    margin-top: 350px;
 
     height: 200px;
     display: block;
@@ -568,5 +611,67 @@ footer ul li a {
   }
   .search-container {
     width: 100%;
+  }
+  .hero-heading {
+    font-size: 32px;
+  }
+  .hero-text {
+    font-size: 14px;
+  }
+  .content {
+    gap: 35px;
+  }
+}
+@media only screen and (max-width: 765px) {
+  .last-item-offset {
+    margin-left: 25%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-slide {
+    height: 30vh;
+  }
+  .item-slide {
+    height: 30vh !important;
+
+    background-position: center !important;
+  }
+
+  .hero-btn {
+    display: none;
+  }
+  .hero-heading {
+    font-size: 24px;
+  }
+  .btn-subjects {
+    font-size: 16px !important;
+  }
+  .instruct-text h3 {
+    font-size: 28px;
+  }
+  .instruct-text p {
+    font-size: 18px;
+  }
+  .my-card {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .courses-mobile {
+    display: block;
+  }
+  .courses-web {
+    display: none;
+  }
+  .text-box-instructor h2 {
+    font-size: 36px;
+  }
+  .text-box-instructor p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .btn-subjects {
+    font-size: 14px !important;
   }
 }

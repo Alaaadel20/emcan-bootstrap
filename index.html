@@ -60,7 +60,7 @@
               id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel"
             >
-              <div class="offcanvas-header">
+              <div class="offcanvas-header offcanvas-header-1">
                 <button
                   type="button"
                   class="btn-close"
@@ -176,7 +176,7 @@
                 background-attachment: fixed;
                 background-position: center;
                 width: 100%;
-                height: 95vh;
+                height: 80vh;
               "
             ></div>
             <div
@@ -191,7 +191,7 @@
                 background-attachment: fixed;
                 background-position: center;
                 width: 100%;
-                height: 95vh;
+                height: 80vh;
               "
             ></div>
             <div
@@ -206,7 +206,7 @@
                 background-attachment: fixed;
                 background-position: center;
                 width: 100%;
-                height: 95vh;
+                height: 80vh;
               "
             ></div>
           </div>
@@ -238,7 +238,7 @@
           style="background: #fff !important"
         >
           <div class="container">
-            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-5">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 g-3">
               <div class="col">
                 <div class="card shadow-sm">
                   <div class="img-box-subjects">
@@ -303,7 +303,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col">
+              <div class="col last-item-offset">
                 <div class="card shadow-sm">
                   <div class="img-box-subjects">
                     <img src="./imgs//Development5.png" alt="" />
@@ -324,7 +324,7 @@
         </div>
       </section>
       <!-- ------------------------------------------------------------------------------------------------- -->
-      <section class="section-courses">
+      <section class="section-courses courses-web">
         <h2 class="courses-heading">Find Your perfect course</h2>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
@@ -724,6 +724,186 @@
             class="carousel-control-next"
             type="button"
             data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------------------------- -->
+      <section class="section-courses courses-mobile">
+        <h2 class="courses-heading">Find Your perfect course</h2>
+        <div id="slider-mobile" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#slider-mobile"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slider-mobile"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#slider-mobile"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="courses-row-container">
+                <div class="my-card">
+                  <div class="img-box">
+                    <img src="./imgs//Image.jpg" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="courses-row-container">
+                <div class="my-card card2">
+                  <div class="img-box">
+                    <img src="./imgs/Image.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="courses-row-container">
+                <div class="my-card card3">
+                  <div class="img-box">
+                    <img src="./imgs/1.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 31.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Sara Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn btn3">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="courses-row-container">
+                <div class="my-card card4">
+                  <div class="img-box">
+                    <img src="./imgs//Image2.png" />
+                  </div>
+                  <div class="text-box">
+                    <p class="course-title">
+                      Science and Machine Learning Bootcamp
+                    </p>
+                    <div class="course-details">
+                      <img src="./imgs/Ellipse 30.png" alt="instructor" />
+                      <p class="instructor-name">
+                        Ahmed Kamel
+                        <span>
+                          <ion-icon name="time" class="time"></ion-icon
+                        ></span>
+                        <span>4 monts</span>
+                        <span
+                          ><ion-icon name="star" class="star"></ion-icon
+                        ></span>
+                        <span>4.5</span>
+                      </p>
+                    </div>
+                    <p class="course-price">25.00 SAR</p>
+                    <button class="cart-btn">
+                      <ion-icon name="cart" class="cart-icon"></ion-icon>Add to
+                      Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev slider-icon"
+            type="button"
+            data-bs-target="#slider-mobile"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slider-mobile"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -1178,7 +1358,7 @@
       </div>
     </section>
     <!-- ------------------------------------------------------------------------------------------------- -->
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <footer class="pt-4 pt-md-5 border-top">
       <div class="row">
         <div class="col-12 col-md">
           <img
